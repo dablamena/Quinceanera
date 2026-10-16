@@ -17,7 +17,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     sitemap({
-      hostname: "https://www.anamariaquince.vercel.app",
+      hostname: "https://www.anamariaquinces.vercel.app",
     }),
   ],
 });
