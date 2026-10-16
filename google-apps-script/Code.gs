@@ -17,7 +17,7 @@
 
 // Recipients of the notification email. Add or remove freely.
 const NOTIFICATION_EMAILS = [
-  "anamaria15.site@gmail.com",
+  "anamariaquinceanera@gmail.com",
   // "correo2@gmail.com",
   // "correo3@gmail.com",
 ];
@@ -27,7 +27,7 @@ const SHEET_NAME = "Confirmaciones";
 
 // Branding used in the email.
 const QUINCEANERA_NAMES = "Daniela & Michael";
-const quinces_DATE_LABEL = "11 de diciembre de 2026";
+const QUINCES_DATE_LABEL = "11 de diciembre de 2026";
 const TIMEZONE = "America/Bogota";
 
 // Column order. This is the single source of truth for the sheet layout;
