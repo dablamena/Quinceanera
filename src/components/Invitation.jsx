@@ -247,7 +247,8 @@ export function Invitation() {
 
         <section className="quote-section" style={{ backgroundImage: `url(${stars})` }}>
           <div>
-            <p>“Una noche para recordar, un momento para soñar y un futuro por descubrir.”</p>
+            <p>“Haz de tu vida un sueño y de tu sueño una realidad.”</p>
+            <span>- Antoine de Saint-Exupéry</span>
           </div>
         </section>
 

@@ -617,7 +617,7 @@ h3 {
 .quote-section div {
   color: #F5F1E7;
   left: 50%;
-  max-width: 720px;
+  max-width: 608px;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -630,13 +630,15 @@ h3 {
   font-size: clamp(30px, 4.5vw, 50px);
   font-style: italic;
   line-height: 1.1;
-  margin: 0 0 20px;
+  margin: 0;
 }
 
 .quote-section span {
   color: #ead8ad;
+  display: block;
   font-size: 10px;
   letter-spacing: 2px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
@@ -975,7 +977,11 @@ footer .ornament,
 
   .quote-section {
     background-attachment: scroll;
-    min-height: 360px;
+    min-height: 320px;
+  }
+
+  .quote-section div {
+    max-width: 448px;
   }
 }
 
@@ -1042,6 +1048,10 @@ footer .ornament,
 
   .map-section iframe {
     min-height: 350px;
+  }
+
+  .quote-section div {
+    max-width: 360px;
   }
 
   .rsvp-form,
