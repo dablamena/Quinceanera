@@ -1,6 +1,6 @@
-# Invitacion Web de Boda
+# Invitacion Web de Quinceañera
 
-Landing page en React para una invitacion digital de matrimonio. Incluye una introduccion animada, informacion del evento, cuenta regresiva, galeria, mapa embebido y formulario de confirmacion de asistencia. La invitación y su contenido han sido personalizados para la boda de Daniela y Michael.
+Landing page en React para una invitacion digital de quinceañera. Incluye una introduccion animada, informacion del evento, cuenta regresiva, galeria, mapa embebido y formulario de confirmacion de asistencia. La invitación y su contenido han sido personalizados para los 15 años de Ana María Mena Pérez.
 
 ## Tecnologias
 
@@ -58,7 +58,7 @@ npm.cmd run preview
 - Portada vertical con sobre y sello dorado.
 - Animacion de apertura a pantalla completa al tocar la invitacion.
 - Cuenta regresiva hasta el 11 de diciembre de 2026.
-- Secciones de bienvenida, historia, detalles, itinerario y regalos.
+- Secciones de bienvenida, historia, detalles y regalos.
 - Galeria navegable de imagenes.
 - Mapa embebido de la recepcion y enlace a Google Maps.
 - Formulario RSVP con:
@@ -67,7 +67,7 @@ npm.cmd run preview
   - Telefono.
   - Rango de edad (solo si asiste).
   - Restricciones alimentarias (solo si asiste).
-  - Mensaje para la pareja.
+  - Mensaje para la quinceañera.
 - En cada envio del formulario, de forma automatica y en una sola peticion:
   - Se agrega una fila nueva en Google Sheets.
   - Se envia un correo HTML de notificacion a los administradores.
@@ -78,14 +78,14 @@ ___Nota:__ Cada asistente debe completar y enviar su propia confirmacion. Si una
 
 ## Informacion Actual Del Evento
 
-- Fecha: 11 de diciembre de 2026.
-- Recepcion: Sagrado, Medellin.
-- Direccion: via La Catedral, vereda El Vallano, km 4, Envigado, Antioquia.
+- Fecha: 11 de diciembre de 2026, 7 p.m.
+- Recepcion: Celebraciones Argento Cristal.
+- Direccion: Carrera 81, Av. 80 #34A-137, Medellin, Antioquia.
 - Mapa: configurado en la seccion `Ubicacion`.
 
 ## Personalizar El Contenido
 
-- Nombres, fecha, itinerario y textos de cada seccion: `src/components/Invitation.jsx`.
+- Nombres, fecha y textos de cada seccion: `src/components/Invitation.jsx`.
 - Sobre, video de apertura y hero: `src/components/Intro.jsx`.
 - Cancion de fondo: `public/audio/quinces-background.mp3` (ver `public/audio/README.md`).
 
@@ -116,15 +116,15 @@ Fecha de registro | Asistencia | Nombre completo | Telefono | Rango de edad | Re
 google-apps-script/Code.gs
 ```
 
-3. Edita la lista `NOTIFICATION_EMAILS` (al inicio del archivo) con los correos
+1. Edita la lista `NOTIFICATION_EMAILS` (al inicio del archivo) con los correos
    que deben recibir las notificaciones. Puedes agregar o quitar destinatarios.
-4. Guarda el proyecto.
-5. Selecciona `Implementar > Nueva implementacion`.
-6. Elige `Aplicacion web`.
-7. En `Ejecutar como`, selecciona tu cuenta.
-8. En acceso, selecciona `Cualquier usuario`.
-9. Autoriza el script (incluye permiso para enviar correos en tu nombre).
-10. Copia la URL que termina en `/exec`.
+2. Guarda el proyecto.
+3. Selecciona `Implementar > Nueva implementacion`.
+4. Elige `Aplicacion web`.
+5. En `Ejecutar como`, selecciona tu cuenta.
+6. En acceso, selecciona `Cualquier usuario`.
+7. Autoriza el script (incluye permiso para enviar correos en tu nombre).
+8. Copia la URL que termina en `/exec`.
 
 > El envio de correos ocurre en Apps Script (no en el navegador), por lo que la
 > lista de destinatarios se configura en `Code.gs`. Si el correo falla, la fila
@@ -189,7 +189,7 @@ Cada envio agregara una fila en la pestana `Confirmaciones`.
   despues de que el invitado empieza a abrir el sobre (para no competir por
   ancho de banda con el video de apertura).
 - `src/components/Intro.jsx`: sobre, video de apertura, hero y navegacion.
-- `src/components/Invitation.jsx`: galerias, itinerario, mapas, regalos y el
+- `src/components/Invitation.jsx`: galerias, mapas, regalos y el
   formulario RSVP.
 - `src/styles.css`: estilos visuales y responsive.
 - `src/config/rsvp.js` / `src/config/audio.js`: variables de entorno y etiquetas.

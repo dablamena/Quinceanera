@@ -29,7 +29,7 @@ body {
   padding: 0;
   min-height: 100dvh;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body.invitation-locked {
@@ -125,7 +125,7 @@ button {
 
 .hero {
   align-items: center;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   color: #F5F1E7;
   display: flex;
@@ -636,7 +636,7 @@ h3 {
 .quote-section span {
   color: #ead8ad;
   display: block;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 2px;
   margin-top: 20px;
   text-transform: uppercase;

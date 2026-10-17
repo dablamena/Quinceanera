@@ -1,12 +1,12 @@
 /**
- * quinces RSVP backend (Google Apps Script).
+ * Quinces RSVP backend (Google Apps Script).
  *
  * Responsibilities, all handled in a single `doPost` request from the website:
  *   1. Append the guest's answer as a new row in the "Confirmaciones" sheet.
  *   2. Send an elegant HTML notification email to every administrator.
  *
  * Deploy: Implementar > Nueva implementación > Aplicación web
- *   - Ejecutar como: tu cuenta.
+ *   - Ejecutar como: Tu cuenta.
  *   - Quién tiene acceso: Cualquier usuario.
  * Then copy the URL ending in `/exec` into VITE_RSVP_ENDPOINT (frontend .env).
  */
@@ -26,7 +26,7 @@ const NOTIFICATION_EMAILS = [
 const SHEET_NAME = "Confirmaciones";
 
 // Branding used in the email.
-const QUINCEANERA_NAMES = "Daniela & Michael";
+const QUINCEANERA_NAMES = "Ana María Quinces";
 const QUINCES_DATE_LABEL = "11 de diciembre de 2026";
 const TIMEZONE = "America/Bogota";
 
@@ -166,7 +166,7 @@ function sendNotificationEmail_(data) {
  */
 function buildEmailHtml_(data) {
   const attending = data.attendance === "yes";
-  const accent = attending ? "#4A668C" : "#9a5b4f";
+  const accent = attending ? "#4a668c" : "#9a5b4f";
   const statusText = data.attendanceLabel || (attending ? "Sí asistirá" : "No podrá asistir");
 
   const rows = [
@@ -179,7 +179,7 @@ function buildEmailHtml_(data) {
     rows.push(detailRow_("Restricciones alimentarias", data.dietary));
   }
 
-  rows.push(detailRow_("Mensaje para la pareja", data.message));
+  rows.push(detailRow_("Mensaje para la quinceañera", data.message));
   rows.push(detailRow_("Fecha de registro", formatDate_(new Date())));
 
   return [
@@ -213,7 +213,7 @@ function buildEmailHtml_(data) {
 
     // Footer
     '<tr><td style="padding:20px 28px 30px;text-align:center;border-top:1px solid #ecdfc2;">',
-    '<p style="margin:0;color:#9c8a63;font-family:Arial,sans-serif;font-size:11px;letter-spacing:1px;">Notificación automática · Invitación digital de boda</p>',
+    '<p style="margin:0;color:#9c8a63;font-family:Arial,sans-serif;font-size:11px;letter-spacing:1px;">Notificación automática · Invitación digital de quinceañera</p>',
     "</td></tr>",
 
     "</table>",

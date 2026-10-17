@@ -38,26 +38,26 @@ import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 const quincesDate = new Date("2026-12-11T19:00:00-05:00");
 
 const quinceaneraGallery = [
-  { id: 1, src: quinceanera1, alt: "Pareja viéndose abarazados de cerca" },
-  { id: 2, src: quinceanera2, alt: "Pareja caminando en un campo en sepia" },
-  { id: 3, src: quinceanera3, alt: "Pareja caminando agarrados del brazo" },
-  { id: 4, src: quinceanera4, alt: "Pareja viéndose sentados en blanco y negro" },
-  { id: 5, src: quinceanera5, alt: "Pareja agarrados de la mano de cerca" },
-  { id: 6, src: quinceanera6, alt: "Pareja corriendo en un campo en sepia" },
-  { id: 7, src: quinceanera7, alt: "Pareja viéndose de costado de cerca" },
-  { id: 8, src: quinceanera8, alt: "Pareja tocando sus manos de cerca en blanco y negro" },
-  { id: 9, src: quinceanera9, alt: "Pareja acostados en un campo" },
+  { id: 1, src: quinceanera1, alt: "Quinceañera recostada en pared" },
+  { id: 2, src: quinceanera2, alt: "Quinceañera tocando su cabello con ambas manos" },
+  { id: 3, src: quinceanera3, alt: "Quinceañera sentada" },
+  { id: 4, src: quinceanera4, alt: "Quinceañera con mano arriba" },
+  { id: 5, src: quinceanera5, alt: "Quinceañera recostada en pared" },
+  { id: 6, src: quinceanera6, alt: "Quinceañera tocando su cabello con una mano" },
+  { id: 7, src: quinceanera7, alt: "Quinceañera con mano en la cintura" },
+  { id: 8, src: quinceanera8, alt: "Quinceañera recostada" },
+  { id: 9, src: quinceanera9, alt: "Quinceañera con mano en la cintura y rostro" },
 ];
 
 const dressCodeGallery = [
-  { id: 1, src: dress1, alt: "Referencia de vestimenta masculina 1" },
-  { id: 2, src: dress2, alt: "Referencia de vestimenta femenina 1" },
-  { id: 3, src: dress3, alt: "Referencia de vestimenta masculina 2" },
-  { id: 4, src: dress4, alt: "Referencia de vestimenta femenina 2" },
+  { id: 1, src: dress1, alt: "Referencia de vestimenta femenina 1" },
+  { id: 2, src: dress2, alt: "Referencia de vestimenta masculina 1" },
+  { id: 3, src: dress3, alt: "Referencia de vestimenta femenina 2" },
+  { id: 4, src: dress4, alt: "Referencia de vestimenta masculina 2" },
 ];
 
 const contactMessage =
-  "¡Hola! ¿Podrías ayudarme con indicaciones para llegar a la celebración de los quince años? 😅🙏";
+  "¡Hola! ¿Podrías ayudarme con indicaciones para llegar a la celebración de los 15 años? 😅🙏";
 
 const contactWhatsAppUrl =
   `https://wa.me/573133422193?text=${encodeURIComponent(contactMessage)}`;
@@ -155,7 +155,7 @@ export function Invitation() {
 
           <p className="lead">
             Con mucha ilusión celebro este momento tan especial y deseo compartir
-            esta noche inolvidable con quienes llenan de alegría mi vida.
+            esta noche inolvidable con quienes llenan mi vida de alegría.
           </p>
 
           <Swiper {...swiperSettings}>
@@ -167,7 +167,7 @@ export function Invitation() {
           </Swiper>
         </section>
 
-        <section className="countdown-section">
+        <section className="countdown-section" id="contador">
           <p className="kicker light">La espera comienza</p>
           <h2>Faltan solamente</h2>
           <div className="countdown">
@@ -187,12 +187,12 @@ export function Invitation() {
             <article>
               <h3>Cuándo</h3>
               <p>7 p.m.<br /><b>11 de diciembre de 2026</b></p>
-              <a href="#itinerario" rel="noreferrer">Ver horarios</a>
+              <a href="#contador" rel="noreferrer">Ver contador</a>
             </article>
             <article>
               <h3>Dónde</h3>
               <p>Salón de Eventos<br /><b>Celebraciones Argento Cristal</b></p>
-              <a href="#ubicacion" rel="noreferrer">Ver ubicaciones</a>
+              <a href="#ubicacion" rel="noreferrer">Ver ubicación</a>
             </article>
             <article>
               <h3>Vestuario</h3>
@@ -202,7 +202,7 @@ export function Invitation() {
           </div>
         </section>
 
-        <section className="map-section light-paper-section" id="ubicacion-recepcion">
+        <section className="map-section light-paper-section" id="ubicacion">
           <div className="map-copy">
             <p className="kicker">Cómo llegar</p>
             <p>Celebraciones Argento Cristal</p>
