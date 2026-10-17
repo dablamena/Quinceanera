@@ -196,7 +196,7 @@ function buildEmailHtml_(data) {
     '<tr><td style="background:' + accent + ';padding:34px 24px;text-align:center;">',
     '<p style="margin:0;color:#ead8ad;font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;">Confirmación de asistencia</p>',
     '<h1 style="margin:10px 0 4px;color:#ffffff;font-size:30px;font-weight:normal;">' + escapeHtml_(QUINCES_NAMES) + "</h1>",
-    '<p style="margin:0;color:#f2e8d4;font-size:14px;letter-spacing:1px;">' + escapeHtml_(quinces_DATE_LABEL) + "</p>",
+    '<p style="margin:0;color:#f2e8d4;font-size:14px;letter-spacing:1px;">' + escapeHtml_(QUINCES_DATE_LABEL) + "</p>",
     "</td></tr>",
 
     // Status pill
