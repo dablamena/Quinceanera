@@ -26,7 +26,7 @@ const NOTIFICATION_EMAILS = [
 const SHEET_NAME = "Confirmaciones";
 
 // Branding used in the email.
-const QUINCEANERA_NAMES = "Ana María Quinces";
+const QUINCES_NAMES = "Ana María Quinces";
 const QUINCES_DATE_LABEL = "11 de diciembre de 2026";
 const TIMEZONE = "America/Bogota";
 
@@ -150,13 +150,13 @@ function sendNotificationEmail_(data) {
     " · " +
     (data.fullName || "Invitado") +
     " — " +
-    QUINCEANERA_NAMES;
+    QUINCES_NAMES;
 
   MailApp.sendEmail({
     to: recipients.join(","),
     subject: subject,
     htmlBody: buildEmailHtml_(data),
-    name: QUINCEANERA_NAMES + " · RSVP",
+    name: QUINCES_NAMES + " · RSVP",
   });
 }
 
@@ -195,7 +195,7 @@ function buildEmailHtml_(data) {
     // Header band
     '<tr><td style="background:' + accent + ';padding:34px 24px;text-align:center;">',
     '<p style="margin:0;color:#ead8ad;font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;">Confirmación de asistencia</p>',
-    '<h1 style="margin:10px 0 4px;color:#ffffff;font-size:30px;font-weight:normal;">' + escapeHtml_(QUINCEANERA_NAMES) + "</h1>",
+    '<h1 style="margin:10px 0 4px;color:#ffffff;font-size:30px;font-weight:normal;">' + escapeHtml_(QUINCES_NAMES) + "</h1>",
     '<p style="margin:0;color:#f2e8d4;font-size:14px;letter-spacing:1px;">' + escapeHtml_(quinces_DATE_LABEL) + "</p>",
     "</td></tr>",
 
