@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 
 import heroQuinces from "../assets/img/hero-quinces.gif";
 
-const quincesLogo = "/img/quinces-logo.png";
+const quincesLogo = "/img/quinces-logo.webp";
 const invitationCover = "/img/invitation-cover.webp";
 const invitationOpening = "/vid/invitation-opening.mp4";
 

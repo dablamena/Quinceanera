@@ -21,8 +21,9 @@ import dress2 from "../assets/img/dress-2.jpg";
 import dress3 from "../assets/img/dress-3.jpg";
 import dress4 from "../assets/img/dress-4.jpg";
 
-import floralOrnament from "../assets/img/floral-ornament.png";
+import floralOrnament from "../assets/img/floral-ornament.webp";
 import bowOrnament from "../assets/img/bow-ornament.webp";
+
 import stars from "../assets/img/stars.gif";
 
 // Import Swiper React components
