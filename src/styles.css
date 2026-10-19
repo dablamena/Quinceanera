@@ -1151,11 +1151,11 @@ footer .ornament,
 
 @media (max-height: 460px) {
   h1 {
-    font-size: clamp(72px, 12vw, 76px);
+    font-size: clamp(72px, 12vw, 72px);
   }
 
   .hero-content {
-    padding-bottom: 24px;
+    padding: 48px 0 24px;
   }
 
   .quinceanera-title {
