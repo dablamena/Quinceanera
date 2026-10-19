@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-import heroQuinces from "../assets/img/hero-quinces.gif";
+import heroQuinces from "../assets/vid/hero-quinces.mp4";
 
 const quincesLogo = "/img/quinces-logo.webp";
 const invitationCover = "/img/invitation-cover.webp";
@@ -115,7 +115,19 @@ export function Intro({ onEnvelopeOpen }) {
         {!envelopeOpening && <p className="intro-hint">Toca para abrir</p>}
       </section>
 
-      <header className="hero" id="inicio" style={{ backgroundImage: `url(${heroQuinces})` }}>
+      <header className="hero" id="inicio">
+        <video
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          aria-hidden="true"
+        >
+          <source src={heroQuinces} type="video/mp4" />
+        </video>
+
         <nav className="navbar">
           <a className="brand" href="#inicio">
             <img src={quincesLogo} width={44} height={44} alt="Volver al inicio" />
@@ -126,6 +138,7 @@ export function Intro({ onEnvelopeOpen }) {
             <a href="#confirmar">Confirmar</a>
           </div>
         </nav>
+
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1><em className="quinceanera-title">

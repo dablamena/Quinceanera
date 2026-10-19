@@ -24,7 +24,7 @@ import dress4 from "../assets/img/dress-4.jpg";
 import floralOrnament from "../assets/img/floral-ornament.webp";
 import bowOrnament from "../assets/img/bow-ornament.webp";
 
-import stars from "../assets/img/stars.gif";
+import stars from "../assets/vid/stars.mp4";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -246,8 +246,20 @@ export function Invitation() {
           </Swiper>
         </section>
 
-        <section className="quote-section" style={{ backgroundImage: `url(${stars})` }}>
-          <div>
+        <section className="quote-section">
+          <video
+            className="quote-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="none"
+            aria-hidden="true"
+          >
+            <source src={stars} type="video/mp4" />
+          </video>
+
+          <div className="quote-content">
             <p>“Haz de tu vida un sueño y de tu sueño una realidad.”</p>
             <span>- Antoine de Saint-Exupéry</span>
           </div>
