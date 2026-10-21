@@ -13,8 +13,6 @@ import quinceanera4 from "../assets/img/quinceanera-4.jpg";
 import quinceanera5 from "../assets/img/quinceanera-5.jpg";
 import quinceanera6 from "../assets/img/quinceanera-6.jpg";
 import quinceanera7 from "../assets/img/quinceanera-7.jpg";
-import quinceanera8 from "../assets/img/quinceanera-8.jpg";
-import quinceanera9 from "../assets/img/quinceanera-9.jpg";
 
 import dress1 from "../assets/img/dress-1.jpg";
 import dress2 from "../assets/img/dress-2.jpg";
@@ -39,15 +37,13 @@ import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 const quincesDate = new Date("2026-12-11T19:00:00-05:00");
 
 const quinceaneraGallery = [
-  { id: 1, src: quinceanera1, alt: "Quinceañera recostada en pared" },
+  { id: 1, src: quinceanera1, alt: "Quinceañera con mano en la cintura" },
   { id: 2, src: quinceanera2, alt: "Quinceañera tocando su cabello con ambas manos" },
   { id: 3, src: quinceanera3, alt: "Quinceañera sentada" },
   { id: 4, src: quinceanera4, alt: "Quinceañera con mano arriba" },
-  { id: 5, src: quinceanera5, alt: "Quinceañera recostada en pared" },
+  { id: 5, src: quinceanera5, alt: "Quinceañera con mano en la cintura y cabeza" },
   { id: 6, src: quinceanera6, alt: "Quinceañera tocando su cabello con una mano" },
-  { id: 7, src: quinceanera7, alt: "Quinceañera con mano en la cintura" },
-  { id: 8, src: quinceanera8, alt: "Quinceañera recostada" },
-  { id: 9, src: quinceanera9, alt: "Quinceañera con mano en la cintura y rostro" },
+  { id: 7, src: quinceanera7, alt: "Quinceañera sentada" },
 ];
 
 const dressCodeGallery = [
