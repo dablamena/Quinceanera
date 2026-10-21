@@ -12,7 +12,6 @@ import quinceanera3 from "../assets/img/quinceanera-3.jpg";
 import quinceanera4 from "../assets/img/quinceanera-4.jpg";
 import quinceanera5 from "../assets/img/quinceanera-5.jpg";
 import quinceanera6 from "../assets/img/quinceanera-6.jpg";
-import quinceanera7 from "../assets/img/quinceanera-7.jpg";
 
 import dress1 from "../assets/img/dress-1.jpg";
 import dress2 from "../assets/img/dress-2.jpg";
@@ -43,7 +42,6 @@ const quinceaneraGallery = [
   { id: 4, src: quinceanera4, alt: "Quinceañera con mano arriba" },
   { id: 5, src: quinceanera5, alt: "Quinceañera con mano en la cintura y cabeza" },
   { id: 6, src: quinceanera6, alt: "Quinceañera tocando su cabello con una mano" },
-  { id: 7, src: quinceanera7, alt: "Quinceañera sentada" },
 ];
 
 const dressCodeGallery = [
