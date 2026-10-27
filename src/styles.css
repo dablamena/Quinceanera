@@ -136,6 +136,7 @@ button {
 }
 
 .hero-video {
+  background: #142238;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -321,6 +322,7 @@ h2 {
 
 .countdown-section,
 .rsvp-section {
+  background: #142238;
   background-image: url("/img/dark-blue-texture.webp");
   background-position: center;
   background-size: cover;
@@ -537,6 +539,7 @@ h3 {
 }
 
 .swiper-slide img {
+  background: #bbb;
   display: block;
   object-fit: cover;
   border-radius: 10px;
@@ -629,6 +632,7 @@ h3 {
 }
 
 .quote-video {
+  background: #142238;
   position: absolute;
   inset: 0;
   width: 100%;
