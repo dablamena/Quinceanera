@@ -22,6 +22,7 @@ import floralOrnament from "../assets/img/floral-ornament.webp";
 import bowOrnament from "../assets/img/bow-ornament.webp";
 
 import stars from "../assets/vid/stars.mp4";
+import starsPoster from "../assets/img/stars-poster.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -247,6 +248,7 @@ export function Invitation() {
             loop
             muted
             playsInline
+            poster={starsPoster}
             preload="none"
             aria-hidden="true"
           >

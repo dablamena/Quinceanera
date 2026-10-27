@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import heroQuinces from "../assets/vid/hero-quinces.mp4";
+import heroQuincesPoster from "../assets/img/hero-quinces-poster.webp";
 
 const quincesLogo = "/img/quinces-logo.webp";
 const invitationCover = "/img/invitation-cover.webp";
@@ -124,6 +125,7 @@ export function Intro({ onEnvelopeOpen }) {
           playsInline
           preload="none"
           aria-hidden="true"
+          poster={heroQuincesPoster}
         >
           <source src={heroQuinces} type="video/mp4" />
         </video>
